@@ -1,0 +1,758 @@
+@font-face {
+	font-family: 'Open Sans';
+	font-weight: 400;
+	font-style: normal;
+	src: local('Open Sans Regular'),
+	url('../fonts/OpenSans-Regular.ttf') format('ttf');
+}
+@font-face {
+	font-family: 'Open Sans';
+	font-weight: 400;
+	font-style: italic;
+	src: local('Open Sans Italic'),
+	url('../fonts/OpenSans-Italic.ttf') format('ttf');
+}
+@font-face {
+	font-family: 'Open Sans';
+	font-weight: 600;
+	font-style: normal;
+	src: local('Open Sans Bold'),
+	url('../fonts/OpenSans-Bold.ttf') format('ttf');
+}
+@font-face {
+	font-family: 'Open Sans';
+	font-weight: 800;
+	font-style: normal;
+	src: local('Open Sans Extra Bold'),
+	url('../fonts/OpenSans-ExtraBold.ttf') format('ttf');
+}
+body {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	margin: 0;
+}
+.header-row {
+	background-color: #F6F2F2;
+	padding-top: 29px;
+}
+/*
+=====================
+Выравниваем поля 
+=====================
+*/
+.logo-row,
+.servis,
+.main-row,
+.sub-heading,
+.info-heading,
+.info-block,
+.footer-info,
+.nav {
+	max-width: 1250px;
+	margin: 0 auto;
+}
+/*
+=====================
+Панель навигации
+=====================
+*/
+.nav {
+	display: flex;
+	justify-content: center;
+	background-color: #000000;
+	text-align: center;
+	margin-bottom: 50px; 
+}
+.nav > a {
+	color: #E0E0E0;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 40px 30px 25px 30px;
+	vertical-align: top;
+	font-size: 14px;
+	line-height: 1.7;
+	letter-spacing: 0.49px;
+}
+.nav a:hover {
+	background-color: #FF3F40;
+}
+/*
+======================
+Панель заголовка
+======================
+*/
+.logo-row {
+	display: flex;
+	padding-top: 50px;
+	padding-bottom: 110px;	
+}
+.logo-row,
+.logo {
+	vertical-align: top;
+}
+.logo,
+.image {
+	display: inline-block;
+}
+.logo {
+	max-width: 700px;
+}
+.image {
+	display: flex;
+	max-width: 550px;
+	box-shadow: -10px -10px 10px 7px rgba(0, 0, 0, 0.06);
+}
+.logo h1,
+.logo p {
+	color: #000000;
+}
+.logo h1 {
+	font-size: 60px;
+	line-height: 1.2;
+	font-weight: 800;
+	text-transform: uppercase;
+	margin: 0;
+	letter-spacing: 1.5px;
+}
+.logo p {
+	margin-bottom: 85px;
+	font-size: 16px;
+	line-height: 1.8;
+}
+
+/*
+======================
+Кнопки
+======================
+*/
+
+.btn {
+	border-radius: 5px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 1.9px;
+	letter-spacing: 0.3px;
+}
+.header-btn {
+	padding: 17px 66px;
+	color: #FFFFFF;
+	vertical-align: bottom;
+	background-color: #FF2D2D;
+}
+.servis-btn {
+	color: #FF2D2D;
+	padding: 15px 60px;
+	border: 3px solid #FF2D2D;
+}
+.sub-btn {
+	color: #fff;
+	background-color: #FF2D2D;
+	width: 217px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	cursor: pointer;
+	border: none;
+	text-transform: uppercase;
+}
+.message-btn {
+	text-align: center;
+	cursor: pointer;
+	border: none;
+	color: #fff;
+	background-color: #FF2D2D;
+	padding: 35px 0;
+	text-transform: uppercase;
+}
+
+/*
+======================
+Блок сервиса
+======================
+*/
+
+.servis {
+	display: flex;
+	padding-top: 93px;
+	padding-bottom: 57px;
+	justify-content: space-between;
+}
+.servis p {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 1.7;
+}
+.servis-logo {
+	max-width: 600px;
+}
+.servis-logo p {
+	padding-right: 20px;
+	padding-bottom: 111px;
+}
+.servis-logo h2 {
+	max-width: 523px;
+	font-weight: bold;
+	font-size: 42px;
+	line-height: 1.3;
+	letter-spacing: 0.4px;
+	text-transform: uppercase;
+	margin: 0;
+}
+.servis-conteiner {
+	display: flex;
+	max-width: 650px;
+	flex-wrap: wrap;
+}
+.servis-item {
+	display: inline-block;
+	max-width: 305px;
+	margin-bottom: 30px;
+	padding-left: 20px;
+}
+.servis-item h3 {
+	font-weight: 600;
+	font-size: 24px;
+	letter-spacing: 0.3px;
+	margin-top: 32px;
+	margin-bottom: 13px;
+}
+.servis-item p {
+	margin-top: 0;
+}
+
+/*
+======================
+Главный раздел
+======================
+*/
+
+.main-row {
+	margin-top: 104px;
+	padding-bottom: 109px;
+}
+.top-heading {
+	text-align: center;
+}
+.top-heading h2,
+.team-heading h2 {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 42px;
+	letter-spacing: 0.4px;
+	margin: 0 0 0 14px;
+}
+.top-heading p,
+.team-heading p,
+.member-box p {
+	font-size: 16px;
+	line-height: 1.7;	
+}
+.top-heading p {
+	margin-bottom: 53px;
+}
+.main-list {
+	display: flex;
+	justify-content: center;
+	margin: 86px 0 58px 0;
+}
+.main-list > a {
+	color: #000000;
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 1.1;
+	letter-spacing: 0.2px;
+	text-transform: uppercase;
+	padding: 0 17px;
+	text-decoration: none;
+}
+.main-list > a:hover {
+	color: #FF2D2D;
+}
+.image-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.image-list > img {
+	margin-bottom: 16px;
+	max-width: 300px; 
+}
+.team-heading {
+	padding-top: 120px;
+}
+.team-heading h2 {
+	margin: 0;
+}
+.team-heading p {
+	max-width: 430px;
+	padding-left: 5px;
+	padding-bottom: 21px;
+}
+.team-box {
+	display: flex;
+	margin-top: 67px;
+}
+.main-team-img {
+	margin-right: 72px;
+}
+.member-box h3 {
+	font-weight: 600;
+	font-size: 30px;
+	letter-spacing: 0.3px;
+	margin: 16px 0 14px 0;
+	text-transform: uppercase;
+}
+.member-box p {
+	margin-bottom: 0;
+	padding-bottom: 47px;
+}
+.social-media {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-style: italic;
+	font-size: 18px;
+	line-height: 1.3;
+	letter-spacing: 0.9px;
+	display: flex;
+}
+.social-media > a {
+	padding-right: 25px;
+	padding-bottom: 55px;
+	text-decoration: none;
+	color: #000;
+}
+.member-images {
+	display: flex;
+	justify-content: space-between;
+}
+.card {
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+.card-row {
+	padding-bottom: 10px;
+	padding-top: 10px;
+	text-align: center;
+	font-weight: 600;
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 0.2px;
+	position: absolute;
+	top: 177px;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+
+}
+.card-row a {
+	text-decoration: none;
+	color: #fff;
+}
+
+/*
+======================
+Раздел подписки
+======================
+*/
+
+.sub-row {
+	background-color: #2C2C2C;
+	padding-top: 132px;
+	padding-bottom: 140px;
+}
+.sub-heading {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.sub-heading h2,
+.sub-heading p,
+.sub-btn {
+	color: #fff;
+}
+.sub-heading h2 {
+	font-weight: bold;
+	font-size: 42px;
+	line-height: 0.6;
+	letter-spacing: 1px;
+	margin-bottom: 16px;
+}
+.sub-heading p {
+	margin-top: 0;
+	margin-bottom: 57px;
+	font-size: 16px;
+	line-height: 1.7;
+}
+.sub-menu {
+	display: flex;
+	justify-content: center;
+}
+.sub-input {
+
+	color: #2C2C2C;
+	border-radius: 8px;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.4px;
+	width: 485px;
+	padding: 27px 0 27px 38px;
+	margin-right: 19px;
+}
+
+/*
+======================
+Раздел инфо.
+======================
+*/
+
+.info-heading {
+	padding-top: 63px;
+	margin-bottom: 73px;
+}
+.info-heading h2 {
+	font-size: 42px;
+	font-weight: bold;
+	letter-spacing: 0.4px;
+	text-transform: uppercase;
+	margin-bottom: 32px;
+}
+.info-heading p {
+	font-size: 16px;
+	line-height: 1.7;
+	margin-bottom: 58px;
+	max-width: 750px;
+}
+.info-block {
+	display: flex;
+	padding-bottom: 113px;
+}
+.message-area {
+	max-width: 830px;
+	display: flex;
+	flex-direction: column;
+	margin-right: 106px;
+}
+.info-form {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 730px;
+}
+.input-info {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.input-info > input {
+	background-color: #E0DDDD;
+	border: none;
+	font-size: 18px;
+	line-height: 1.9;
+	letter-spacing: 0.3px;
+	padding: 20px 0 20px 56px;
+	display: inline-block;
+	margin-bottom: 40px;
+	width: 280px;
+	border-radius: 8px;
+}
+.text-input {
+	background-color: #E0DDDD;
+	width: 730px;
+	border-radius: 8px;
+	margin-bottom: 58px;
+	border: none;
+	font-size: 16px;
+	line-height: 1.7;
+	padding: 30px 0 0 50px;
+}
+.contact-info {
+	display: flex;
+	flex-direction: column;
+	background-color: #2D2D2D;
+	padding-left: 80px;
+	width: 100%;
+}
+.contact-info h3,
+.contact-info p,
+.contact-info a {
+	color: #fff;
+}
+.contact-info h3 {
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 1.9;
+	letter-spacing: 0.3px;
+	text-transform: uppercase;
+	margin-top: 140px;
+	margin-bottom: 0;
+	padding-bottom: 16px;
+}
+.contact-info p,
+.contact-info a {
+	font-size: 16px;
+	line-height: 1.7;
+}
+.contact-info p {
+	margin: 0;
+	padding-top: 14px;
+	padding-bottom: 15px;
+}
+.wrong {
+	margin-bottom: 40px;
+}
+.contact-info a {
+	padding-top: 15px;
+	padding-bottom: 30px;
+}
+
+/*
+======================
+Подвал
+======================
+*/
+
+.footer-row {
+	background-color: #313030;
+}
+.footer-info {
+	display: flex;
+	justify-content: space-between;
+	vertical-align: center;
+	padding-top: 42px;
+	padding-bottom: 25px;
+}
+.footer-info p {
+	color: #B8B8B8;
+	font-size: 16px;
+	line-height: 1.6;
+}
+.social-icons > a {
+	padding-left: 18px;
+}
+
+/*
+======================
+разделительные полосы
+======================
+*/
+
+.servis-hr {
+	width: 1250px;
+	border: 1px solid #ECECEC;
+}
+.main-top-hr,
+.team-hr,
+.info-hr {
+	background-color: #FF2D2D;
+	width: 134px;
+	border: 0.5px solid #FF2D2D;
+}
+.team-hr {
+	margin: 0;
+	margin-left: 5px;
+}
+.info-hr {
+	margin-left: 0;
+}
+
+/*
+======================
+Медиазапросы
+======================
+*/
+
+@media screen and (max-width: 1400px) {
+	.header-row {
+		padding-bottom: 70px;
+	}
+	.servis {
+		padding: 107px 10px 57px 10px;
+	}
+	.sevis-logo {
+		text-align: center;
+	}
+	.servis-conteiner {
+		justify-content: center;
+	}
+	.main-row {
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	.image-list {
+		justify-content: space-around;
+	}
+	.member-box {
+		display: flex;
+		flex-direction: column;
+	}
+	.member-images {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.member-images > img {
+		padding-bottom: 16px;
+	}
+}
+
+@media screen and (max-width: 1270px) {
+	.logo-row {
+		padding: 0 10px;
+	}
+}
+
+@media screen and (max-width: 1110px) {
+	.header-row {
+		padding-bottom: 30px;
+	}
+	.logo-row {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.image {
+		order: -1;
+		margin-bottom: 20px;
+	}
+	.logo {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		width: 100%;
+	}
+	.logo p {
+		margin-bottom: 40px;
+	}
+	.btn {
+		vertical-align: baseline;
+		margin: 0 auto;
+	}
+	.main-list {
+		flex-wrap: wrap;
+	}
+	.main-list > a {
+		padding-bottom: 20px;
+	}
+	.team-heading {
+		text-align: center;
+	}
+	.team-heading p {
+		max-width: 100%;
+	}
+	.team-hr {
+		margin: 0 auto;
+	}
+	.sub-heading,
+	.info-block {
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	.sub-heading h2 {
+		line-height: 1.1;
+	}
+	.info-heading {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+	.info-heading p {
+		margin: 0 auto;
+		margin-bottom: 20px;
+		text-align: center;
+		width: 100%;
+	}
+	.info-hr {
+		text-align: center;
+		margin: 0 auto;
+	}
+	.info-block {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.message-area {
+		margin-right: 0;
+	}
+	.contact-info {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 40px 0 40px 0;
+		margin-top: 40px;
+		text-align: center;
+	}
+	.contact-info h3 {
+		margin-top: 0;
+	}
+	.footer-info {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	.servis {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.servis-logo {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+	.servis-conteiner {
+		padding-top: 100px;
+	}
+	.team-box {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.member-box {
+		text-align: center;
+	}
+	.main-team-img {
+		margin: 0;
+	}
+	.social-media {
+		flex-wrap: wrap;
+	}
+	.message-area,
+	.content-info {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+@media screen and (max-width: 580px) {
+	.image img {
+		display: flex;
+		width: 100%;
+	}
+	.nav {
+		flex-wrap: wrap;
+	}
+	.logo h1 {
+		font-size: 27px;
+	}
+	.image-list > img {
+		width: 100%;
+	}
+	.servis-logo h2 {
+		font-size: 24px;
+	}
+	.main-team-img img {
+		width: 100%;
+	}
+	.sub-menu {
+		flex-wrap: wrap;
+	}
+	.sub-btn {
+		margin-top: 20px;
+	}
+	.input-info {
+		flex-wrap: wrap;
+	}
+	.input-info > input {
+		max-width: 200px;
+	}
+	.text-input {
+		width: 100%;
+	}
+}
