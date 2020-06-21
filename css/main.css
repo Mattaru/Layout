@@ -228,7 +228,7 @@ body {
 
 .main-row {
 	margin-top: 104px;
-	padding-bottom: 109px;
+	padding-bottom: 104px;
 }
 .top-heading {
 	text-align: center;
@@ -248,7 +248,7 @@ body {
 	line-height: 1.7;	
 }
 .top-heading p {
-	margin-bottom: 53px;
+	margin-bottom: 48px;
 }
 .main-list {
 	display: flex;
@@ -418,12 +418,12 @@ body {
 .info-heading p {
 	font-size: 16px;
 	line-height: 1.7;
-	margin-bottom: 58px;
+	margin-bottom: 55px;
 	max-width: 750px;
 }
 .info-block {
 	display: flex;
-	padding-bottom: 113px;
+	padding-bottom: 111px;
 }
 .message-area {
 	max-width: 830px;
@@ -457,7 +457,7 @@ body {
 	background-color: #E0DDDD;
 	width: 730px;
 	border-radius: 8px;
-	margin-bottom: 58px;
+	margin-bottom: 53px;
 	border: none;
 	font-size: 16px;
 	line-height: 1.7;
@@ -492,15 +492,15 @@ body {
 }
 .contact-info p {
 	margin: 0;
-	padding-top: 14px;
+	padding-top: 2px;
 	padding-bottom: 15px;
 }
 .wrong {
 	margin-bottom: 40px;
 }
 .contact-info a {
-	padding-top: 15px;
-	padding-bottom: 30px;
+	padding-top: 10px;
+	padding-bottom: 18px;
 }
 
 /*
@@ -599,6 +599,14 @@ body {
 	.card {
 		padding-bottom: 20px;
 	}
+	.info-heading {
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	.info-block {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 }
 
 @media screen and (max-width: 1110px) {
@@ -642,13 +650,15 @@ body {
 	.team-hr {
 		margin: 0 auto;
 	}
-	.sub-heading,
-	.info-block {
+	.sub-heading {
 		padding-right: 10px;
 		padding-left: 10px;
 	}
 	.sub-heading h2 {
 		line-height: 1.1;
+	}
+	.sub-btn {
+		margin: 0;
 	}
 	.info-heading {
 		display: flex;
@@ -716,10 +726,12 @@ body {
 	.social-media {
 		flex-wrap: wrap;
 	}
-	.message-area,
-	.content-info {
-		padding-left: 10px;
-		padding-right: 10px;
+	.input-info {
+		flex-wrap: wrap;
+	}
+	.text-input,
+	.input-info {
+		width: 100%;
 	}
 }
 
@@ -754,8 +766,5 @@ body {
 	}
 	.input-info > input {
 		max-width: 200px;
-	}
-	.text-input {
-		width: 100%;
 	}
 }
