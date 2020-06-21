@@ -596,6 +596,9 @@ body {
 	.logo-row {
 		padding: 0 10px;
 	}
+	.card {
+		padding-bottom: 20px;
+	}
 }
 
 @media screen and (max-width: 1110px) {
