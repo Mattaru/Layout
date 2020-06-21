@@ -330,6 +330,7 @@ body {
 	margin: 0;
 }
 .card-row {
+/*	display: none; */
 	padding-bottom: 10px;
 	padding-top: 10px;
 	text-align: center;
@@ -343,6 +344,11 @@ body {
 	width: 100%;
 
 }
+/*
+.visible {
+	display: inline-block;
+}
+*/
 .card-row a {
 	text-decoration: none;
 	color: #fff;
